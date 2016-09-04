@@ -55,15 +55,18 @@ $(function () {
   // Track the number of attempts
   var attempts = 0;
 
+  // Target the body to check for changes
+  var targetNode = document.querySelector('body');
+
   // Attempt to hide
   var attemptToHide = function () {
     ++attempts;
     try {
-      if (document.querySelector('.table-responsive')) {
+      if (targetNode) {
         console.log('%cBlindfold: %cHiding info...', 'color: #EB3349', 'color: #9CAFBE');
         hideContent();
       }
-      observeDOM(document.querySelector('.table-responsive'), function (){
+      observeDOM(targetNode, function (){
           console.log('%cBlindfold: %cNoticed an update in the DOM, rehiding info...', 'color: #EB3349', 'color: #9CAFBE');
           hideContent();
       });

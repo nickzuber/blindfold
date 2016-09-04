@@ -1,7 +1,7 @@
 {
   "name": "Leetcode Blindfold",
   "description": "Reduce self imposed anxiety by hiding LeetCode's difficulty, acceptance, and question stats.",
-  "version": "0.1",
+  "version": "0.2",
   "background": {
     "scripts": ["jquery.js", "main.js"]
   },
@@ -10,7 +10,8 @@
   ],
   "icons": {
     "16": "icons/icon16.png",
-    "48": "icons/icon48.png"
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "browser_action": {
       "default_title": "Leetcode Blindfold",
