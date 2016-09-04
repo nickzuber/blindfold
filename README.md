@@ -1,3 +1,5 @@
+<img src="icons/icon128.png" />
+
 # Blindfold for LeetCode
 
 > Reduce self imposed anxiety by hiding LeetCode's difficulty, acceptance, and question stats.
