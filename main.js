@@ -68,6 +68,7 @@ $(function () {
           hideContent();
       });
     } catch (e) {
+      hideContent();
       console.log(`%cBlindfold: %cUnable to detect target node, trying again in ${RETRY_TIMING / 1000} seconds...`, 'color: #EB3349', 'color: #9CAFBE');
       setTimeout(() => {
         if (attempts < ERROR_BUFFER) {
