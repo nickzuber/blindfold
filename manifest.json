@@ -8,8 +8,13 @@
   "permissions": [
     "tabs", "http://leetcode.com/*", "https://leetcode.com/*"
   ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
   "browser_action": {
-      "default_title": "Leetcode Blindfold"
+      "default_title": "Leetcode Blindfold",
+      "default_icon": "icons/icon16.png"
   },
   "content_scripts": [
     {
