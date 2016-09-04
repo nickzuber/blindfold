@@ -3,7 +3,7 @@
   "description": "Reduce self imposed anxiety by hiding LeetCode's difficulty, acceptance, and question stats.",
   "version": "0.1",
   "background": {
-    "scripts": ["main.js"]
+    "scripts": ["jquery.js", "main.js"]
   },
   "permissions": [
     "tabs", "http://leetcode.com/*", "https://leetcode.com/*"
@@ -14,7 +14,7 @@
   "content_scripts": [
     {
       "matches": ["http://leetcode.com/*","https://leetcode.com/*"],
-      "js": ["main.js"]
+      "js": ["jquery.js", "main.js"]
     }
   ],
   "manifest_version": 2
