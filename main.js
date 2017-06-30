@@ -23,7 +23,7 @@ function hideContent () {
   });
 
   // Hide question stats while on the problem's page
-  $('.question-info').hide();
+  $('span[class~="pull-right"]').hide();
 }
 
 $(function () {
